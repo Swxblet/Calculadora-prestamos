@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <head>
+    <script src="index.js"></script>
     <title>BEC|Banca online</title>
 </head>
 <body>
@@ -9,16 +10,14 @@
     <div class="header">
         <div class="index">
             <div class="logo">
-                <!--AQUI FALTA CAMBIAR EL PATH POR LA IMAGEN PERSONALIZADA DEL BEC-->
-                <img src="https://www.baccredomatic.com/themes/custom/bac_theme/images/bac_logo.svg" alt="logo">
+                <img src="BEC.png" alt="logo">
             </div>
             <p>Personas</p>
         </div>
         <div class="aboutUs">
             <div class="aboutUsCarousel">
                 <div class="aboutUsCarouselImg">
-                    <!--AQUI ME FALTA COLOCAR LA IMAGEN 1-->
-                    <img src="" alt="Image1">
+                    <img src="https://images.pexels.com/photos/4005082/pexels-photo-4005082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image1">
                     <div class="aboutUsCarouselText">
                         <h1>positivando</h1>
                         <h4>
@@ -28,7 +27,7 @@
                     </div>
                 </div>
                 <div class="aboutUsCarouselImg">
-                    <img src="" alt="Image2">
+                    <img src="https://media.istockphoto.com/id/2120760479/photo/young-man-traveling-by-car-getting-out-of-the-car.jpg?s=612x612&w=0&k=20&c=6GmzLsvi9uuYrPJEcv9Dan46TjFWw1Mm7cACTHmWmRg=" alt="Image2">
                     <div class="aboutUsCarouselText">
                         <h1><strong>Tu auto nuevo llega más <br>
                         rápido de lo que te <br>
@@ -37,7 +36,7 @@
                     </div>
                 </div>
                 <div class="aboutUsCarouselImg">
-                    <img src="" alt="Image3">
+                    <img src="https://photos.peopleimages.com/picture/202310/2945822-happy-people-high-five-and-teamwork-in-logistics-success-or-sale-together-at-retail-store.-excited-man-and-woman-touching-hands-with-smile-for-team-promotion-winning-or-collaboration-at-workshop-zoom_90.jpg" alt="Image3">
                     <div class="aboutUsCarouselText">
                         <h1><strong>Somos <br></strong>
                         más que <br>
@@ -49,10 +48,66 @@
             </div>
         </div>
         <div class="variousInfo">
-
+            <div class="creditCardInfo">
+                <table>
+                    <tr class="creditCardInfo">
+                        <td>Tarjetas</td>
+                        <td>Préstamos</td>
+                        <td>Cuentas</td>
+                        <td>Seguros</td>
+                        <td>Fideicomisos</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="creditCardExtraInfo">
+                <h2>Lo mejor sólo para vos</h2>
+                <div class="creditCardExtraInfoImg">
+                    <img src="https://www.baccredomatic.com/sites/default/files/styles/real_estate_768_432_/public/2023-03/Tarjeta%20BIO%20Cashback%20Clasica_0.webp?itok=fs4vQLrn" alt="Image4">
+                    <div class="creditCardExtraInfoText">
+                        <h2>Tarjeta CashBack</h2>
+                        <p>Comprá y ahorrá con los puntos CashBack <br>
+                        de BEC Credomatic</p>
+                    </div>
+                </div>
+                <div class="creditCardExtraInfoImg">
+                    <img src="https://www.baccredomatic.com/sites/default/files/styles/real_estate_768_432_/public/2021-04/cr-tarjeta-sinmarca-laroja_0.webp?itok=8bK6rx3d" alt="Image5">
+                    <div class="creditCardExtraInfoText">
+                        <h2>La Roja</h2>
+                        <p>Disfrutá pagando todas tus compras sin <br>
+                        complicaciones con La Roja</p>
+                    </div>
+                </div>
+                <div class="creditCardExtraInfoImg">
+                    <img src="https://www.baccredomatic.com/sites/default/files/styles/real_estate_768_432_/public/2021-04/cr-tarjeta-sinmarca-millasplus-gold.webp?itok=q4v4HjYj" alt="Image6">
+                    <div class="creditCardExtraInfoText">
+                        <h2>Tarjeta MillasPlus</h2>
+                        <p>Acumulá millas y viajá cuando querás, <br>
+                        donde querás y con la aerolínea de tu <br>
+                        preferencia.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="exchangeInfo">
-
+            <div class="exchangeInfoText">
+                <h2>Tipo de cambio</h2>
+            </div>
+            <div class="exchangeInfoButtons">
+                <button class="exchangeInfoButton" onclick="mostrarDolar()">Dolar</button>
+                <button class="exchangeInfoButton" onclick="mostrarEuro()">Euro</button>
+            </div>
+            <div class="exchangeInfoCurrency">
+                <table class="exchangeInfoCurrencyTable">
+                    <tr class="exchangeInfoCurrencyTypes">
+                        <td>Compra</td>
+                        <td>Venta</td>
+                    </tr>
+                    <tr>
+                        <td id="buyPrice">¢499,00</td>
+                        <td id="sellPrice">¢513,00</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="solutions">
 
