@@ -1,6 +1,9 @@
 .container{
     background-color: white;
 }
+.logo{
+    transform: scale(0.6);
+}
 .aboutUsCarouselImages {
     position: relative;
     display: none;
