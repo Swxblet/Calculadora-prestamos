@@ -1,3 +1,79 @@
 .container{
     background-color: white;
 }
+.aboutUsCarouselImages {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.aboutUsCarouselText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    padding: 20px;
+    max-width: 90%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none;
+    z-index: 10; /* Para estar encima de la imagen */
+}
+
+.aboutUsCarouselText.show {
+    opacity: 1;
+}
+.aboutUsCarouselImages img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.aboutUsCarouselImages.active {
+    display: flex;
+}
+
+.progressContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.progressWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressBar {
+    width: 100px;
+    height: 10px;
+    background: #444;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fill {
+    background: #00ccff;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0s;
+    z-index: 1;
+}
+
+.barText {
+    margin-top: 5px;
+    color: white;
+    font-size: 12px;
+    pointer-events: none;
+}
