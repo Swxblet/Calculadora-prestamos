@@ -2,26 +2,48 @@
     background-color: white;
 }
 .aboutUsCarouselImages {
-    display: none;
-    flex-direction: row;
-    align-items: center;
     position: relative;
+    display: none;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUsCarouselImages.active {
+    display: flex;
+}
+.aboutUsCarouselImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aboutUsCarouselImages::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* cambia el 0.4 según qué tan oscura la querés */
+    z-index: 1;
 }
 .aboutUsCarouselText {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 40%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: left;
     padding: 20px;
     max-width: 90%;
-    background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     opacity: 0;
     transition: opacity 1s ease;
     pointer-events: none;
-    z-index: 10; /* Para estar encima de la imagen */
+    z-index: 10;
+    font-size: 30px;
 }
 
 .aboutUsCarouselText.show {
@@ -36,14 +58,19 @@
 .aboutUsCarouselImages.active {
     display: flex;
 }
-
 .progressContainer {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: row;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+    z-index: 10;
 }
-
+.aboutUsCarousel {
+    position: relative;
+}
 .progressWrapper {
     display: flex;
     flex-direction: column;
@@ -51,9 +78,9 @@
 }
 
 .progressBar {
-    width: 100px;
-    height: 10px;
-    background: #444;
+    width: 200px;
+    height: 5px;
+    background: gray;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
@@ -61,8 +88,8 @@
 }
 
 .fill {
-    background: #00ccff;
-    width: 0%;
+    background: white;
+    width: 0;
     height: 100%;
     position: absolute;
     top: 0;
@@ -74,6 +101,6 @@
 .barText {
     margin-top: 5px;
     color: white;
-    font-size: 12px;
+    font-size: 34px;
     pointer-events: none;
 }
