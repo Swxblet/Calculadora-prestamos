@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".aboutUsCarouselImages");
     const fills = document.querySelectorAll(".fill");
     const progressBars = document.querySelectorAll(".progressBar");
-    const duration = 5000; // 5 segundos por imagen
     let current = 0;
 
     function showSlide(index) {
@@ -44,20 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const text = slide.querySelector(".aboutUsCarouselText");
             if (text) text.classList.remove("show");
         });
-
-        // Reiniciar todas las barras
-        fills.forEach((fill, i) => {
-            fill.style.transition = "none";
-            fill.style.width = "0%";
-        });
-
-        // Forzar reflow para reiniciar transición
-        void fills[index].offsetWidth;
-
-        // Llenar barra activa
-        fills[index].style.transition = `width ${duration}ms linear`;
-        fills[index].style.width = "100%";
-
         // Mostrar texto con animación
         const activeText = slides[index].querySelector(".aboutUsCarouselText");
         if (activeText) {
