@@ -112,3 +112,9 @@
     font-size: 34px;
     pointer-events: none;
 }
+.creditCardImages{
+    object-fit: cover;
+}
+.creditCardImg {
+
+}
