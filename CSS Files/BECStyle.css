@@ -271,3 +271,120 @@
     font-size: 18px;
     gap: 10px;
 }
+.getAppointment {
+    font-family: "Montserrat", sans-serif;
+    background-color: #4be4c8;
+    background-image: linear-gradient(to bottom, #4be4c8 0%, #385898 74%);
+    padding: 50px 70px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.getAppointmentBox {
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+    transition: transform 0.3s ease;
+}
+
+.getAppointmentBox:hover {
+    transform: translateY(-5px);
+}
+
+.getAppointmentBox img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.getAppointmentBox h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.getAppointmentBox p {
+    text-align: left;
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.4;
+}
+.siteFooter {
+    margin-top: 40px;
+    text-decoration: none;
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footerLogo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footerLinks,
+.footerContact {
+    flex: 1 1 250px;
+    margin: 20px;
+}
+
+.footerLinks h3,
+.footerContact h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footerLinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks ul li {
+    margin-bottom: 10px;
+}
+
+.footerLinks ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footerLinks ul li a:hover {
+    color: #fff;
+}
+
+.footerContact p {
+    margin: 5px 0;
+}
+.footerBottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+.footerSocial a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
