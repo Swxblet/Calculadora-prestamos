@@ -38,6 +38,7 @@
 
 .mainMenu a:hover {
     color: #d32f2f;
+    transform: translateY(-5px);
 }
 .navbar {
     position: fixed;
@@ -199,7 +200,8 @@
     line-height: 1.4;
 }
 .variousInfo {
-    background-color: #f0f0f0;
+    background-color: #4be4c8;
+    background-image: linear-gradient(to bottom, #4be4c8 0%, #385898 74%);
     padding: 50px 70px;
     margin-top: -180px;
     border-radius: 12px;
@@ -217,7 +219,7 @@
     border-radius: 8px;
 }
 .exchangeInfo {
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to bottom, #4be4c8 0%, #385898 50%);
     padding: 50px 70px;
     margin-top: 40px;
     border-radius: 12px;
@@ -229,15 +231,43 @@
     margin-right: auto;
 }
 .exchangeInfoFiller {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     background-color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 8px;
 }
-.exchangeInfoButton {
+.exchangeInfoButtons {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     transform: translateY(-5px);
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     background-color: #f0f0f0;
     padding: 10px 20px;
+}
+.exchangeInfoButtons button {
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+}
+.exchangeInfoButton:hover {
+    background-color: #385898;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+.exchangeInfoButton:active {
+    background-color: #d0d0d0;
+    transform: scale(0.95);
+}
+.exchangeInfoCurrencyTable {
+    font-size: 18px;
+    gap: 10px;
 }

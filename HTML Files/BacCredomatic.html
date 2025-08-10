@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <script src="../JavaScript%20Files/index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS%20Files/BECStyle.css">
@@ -84,17 +84,17 @@
             <div class="creditCardExtraInfo">
                 <h2>Lo mejor sólo para vos</h2>
                 <div class="creditCardBox">
-                    <img src="/Images/Eco BEC.png" alt="La Roja">
+                    <img src="/Images/EcoBEC.png" alt="La Roja">
                     <h3>Tarjeta CashBack</h3>
                     <p>Comprá y ahorrá con los puntos CashBack<br>de BEC Credomatic</p>
                 </div>
                 <div class="creditCardBox">
-                    <img src="/Images/LA VERDE.png" alt="CashBack">
+                    <img src="/Images/LAVERDE.png" alt="CashBack">
                     <h3>La Verde</h3>
                     <p>Disfrutá pagando todas tus compras sin<br>complicaciones con La Verde</p>
                 </div>
                 <div class="creditCardBox">
-                    <img src="/Images/Millas plus.png" alt="MillasPlus">
+                    <img src="/Images/Millasplus.png" alt="MillasPlus">
                     <h3>Tarjeta MillasPlus</h3>
                     <p>Acumulá millas y viajá cuando querás,<br>donde querás y con la aerolínea de tu preferencia.</p>
                 </div>
@@ -105,21 +105,21 @@
                 <div class="exchangeInfoText">
                     <h2>Tipo de cambio</h2>
                 </div>
-                <div class="exchangeInfoButtons">
-                    <button class="exchangeInfoButton" onclick="mostrarDolar()">Dolar</button>
-                    <button class="exchangeInfoButton" onclick="mostrarEuro()">Euro</button>
-                </div>
-                <div class="exchangeInfoCurrency">
-                    <table class="exchangeInfoCurrencyTable">
-                        <tr class="exchangeInfoCurrencyTypes">
-                            <td>Compra</td>
-                            <td>Venta</td>
-                        </tr>
-                        <tr>
-                            <td id="buyPrice">¢499,00</td>
-                            <td id="sellPrice">¢513,00</td>
-                        </tr>
-                    </table>
+                <div class="exchangeInfoGather">
+                    <div class="exchangeInfoButtons">
+                        <button class="exchangeInfoButton" onclick="mostrarDolar()">Dolar</button>
+                        <button class="exchangeInfoButton" onclick="mostrarEuro()">Euro</button>
+                        <table class="exchangeInfoCurrencyTable">
+                            <tr class="exchangeInfoCurrencyTypes">
+                                <td>Compra</td>
+                                <td>Venta</td>
+                            </tr>
+                            <tr>
+                                <td id="buyPrice">¢499,00</td>
+                                <td id="sellPrice">¢513,00</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,35 +133,22 @@
             </div>
             <div class="solutionsButtons">
                 <div class="solutionsButtons">
-                    <!-- Imagen principal-->
                     <img id="imagen-principal" src="https://www.baccredomatic.com/sites/default/files/styles/vertical_image_500x720/public/2021-04/ilustracionesHOME_wizard_tarjetas_vertical_sinfondo.png.webp?itok=tqfIBROJ" class="buttonHoverImage" alt="Imagen principal">
-
-                    <!-- Botón 1 -->
                     <button class="solutionsButton"
                             onmouseover="cambiarImagen('https://www.baccredomatic.com/sites/default/files/styles/vertical_image_500x720/public/2021-04/ilustracionesHOME_wizard_tarjetas_vertical_sinfondo.png.webp?itok=tqfIBROJ')"
                             onmouseout="volverImagen()">Solicitá tu tarjeta aquí</button>
-
-                    <!-- Botón 2 -->
                     <button class="solutionsButton"
                             onmouseover="cambiarImagen('https://www.baccredomatic.com/sites/default/files/styles/vertical_image_500x720/public/2021-04/ilustracionesHOME_wizard_tarjetas_vertical_sinfondo.png.webp?itok=tqfIBROJ')"
                             onmouseout="volverImagen()">Renová tu tarjeta</button>
-
-                    <!-- Botón 3 -->
                     <button class="solutionsButton"
                             onmouseover="cambiarImagen('https://www.baccredomatic.com/sites/default/files/styles/vertical_image_500x720/public/2021-04/ilustracionesHOME_wizard_prestamos_vertical_sinfondo.png.webp?itok=jTlyG1Q1')"
                             onmouseout="volverImagen()">Conseguí tu préstamo</button>
-
-                    <!-- Botón 4 -->
                     <button class="solutionsButton"
                             onmouseover="cambiarImagen('https://www.baccredomatic.com/sites/default/files/styles/vertical_image_500x720/public/2023-05/SWC-755-Compass.png.webp?itok=ay1xJiJW')"
                             onmouseout="volverImagen()">Compass</button>
-
-                    <!-- Botón 5 -->
                     <button class="solutionsButton"
                             onmouseover="cambiarImagen('https://www.baccredomatic.com/sites/default/files/styles/vertical_image_500x720/public/2021-04/ilustracionesHOME_wizard_sucursales_vertical_sinfondo.png.webp?itok=xRm40Set')"
                             onmouseout="volverImagen()">¿Cómo podemos ayudarte?</button>
-
-                    <!-- Botón 6 -->
                     <button class="solutionsButton"
                             onmouseover="cambiarImagen('https://www.baccredomatic.com/sites/default/files/styles/vertical_image_500x720/public/2021-04/ilustracionesHOME_wizard_seguridad_vertical_sinfondo.png.webp?itok=5UGwnqVF')"
                             onmouseout="volverImagen()">Consejos de seguridad</button>
