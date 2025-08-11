@@ -2,6 +2,7 @@
     width: 100%;
     background-color: white;
     border-bottom: 1px solid #ddd;
+    font-family: 'Montserrat', sans-serif;
 }
 .navbar {
     display: flex;
@@ -92,7 +93,7 @@
 }
 .aboutUsCarouselText {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 40%;
     transform: translate(-50%, -50%);
     color: white;
@@ -146,6 +147,11 @@
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
+}
+.progressBar:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
 }
 .barText {
     font-family: "Montserrat", sans-serif;

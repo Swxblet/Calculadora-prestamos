@@ -1,3 +1,6 @@
+.container{
+    font-family: 'Montserrat', sans-serif;
+}
 .navbarTwo {
     display: flex;
     justify-content: space-between;
