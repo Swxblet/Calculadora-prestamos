@@ -5,50 +5,73 @@ body {
     background-color: #f0f2f5;
 }
 
-/* Elimina bullets de todas las listas */
 ul, ul li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* Navbar */
 .navbarThree {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.8rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
 }
-
 .navbarLeft {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-
 .logo img {
-    height: 50px;
+    height: 80px;
+    width: auto;
+    display: block;
 }
-
 .mainMenu {
+    list-style: none;
     display: flex;
     gap: 1.5rem;
 }
 
-.mainMenu li a {
+.mainMenu a {
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: #333;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.mainMenu li a:hover {
-    color: #0077cc;
+.mainMenu a:hover {
+    color: #d32f2f;
+    transform: translateY(-5px);
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: -120px;
 }
 
-/* Cajita central */
+.search-box input {
+    height: 40px;
+    padding: 5px 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 180px;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: #888;
+}
+
 main {
     max-width: 900px;
     margin: 3rem auto;
@@ -58,7 +81,6 @@ main {
     border-radius: 12px;
 }
 
-/* Secciones internas */
 .hero, .loan-types, .benefits, .requirements {
     margin-bottom: 2.5rem;
 }
@@ -91,7 +113,6 @@ main {
     color: #444;
 }
 
-/* Footer */
 .siteFooter {
     background-color: #333;
     color: #fff;
