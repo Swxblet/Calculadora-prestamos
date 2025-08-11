@@ -1,0 +1,122 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/* Elimina bullets de todas las listas */
+ul, ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbarThree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbarLeft {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.mainMenu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.mainMenu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.mainMenu li a:hover {
+    color: #0077cc;
+}
+
+/* Cajita central */
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: 12px;
+}
+
+/* Secciones internas */
+.hero, .loan-types, .benefits, .requirements {
+    margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+
+.loan-types h2,
+.benefits h2,
+.requirements h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.loan-types ul li,
+.benefits ul li,
+.requirements ul li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Footer */
+.siteFooter {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footerLinks ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLinks ul li a:hover {
+    text-decoration: underline;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
