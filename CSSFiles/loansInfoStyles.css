@@ -77,8 +77,9 @@ main {
     margin: 3rem auto;
     background-color: #ffffff;
     padding: 2.5rem;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 18px 20px rgba(0,0,0,0.08);
     border-radius: 12px;
+    background-image: radial-gradient(circle, #4be4c8 0%, #888 79%);
 }
 
 .hero, .loan-types, .benefits, .requirements {
